@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://u1kvbd21armi"]
+
+[ext_resource type="Shader" path="res://Shaders/BlurUIBackground.gdshader" id="1_7d04v"]
+
+[resource]
+shader = ExtResource("1_7d04v")
+shader_parameter/blur = 1.0
+shader_parameter/brightness = 0.8

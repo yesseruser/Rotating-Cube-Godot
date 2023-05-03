@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dadudh48tike"]
+
+[ext_resource type="Script" path="res://Scripts/Cube.cs" id="1_4tsql"]
+[ext_resource type="PackedScene" uid="uid://bvb53a77mpgdl" path="res://Scenes/UI.tscn" id="2_hysu5"]
+
+[node name="main" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+flip_faces = true
+script = ExtResource("1_4tsql")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.992446, -0.0419602, 0.115285, 0, 0.939693, 0.34202, -0.122683, -0.339436, 0.932594, 0, 1, 3)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.939693, 0.34202, 0, -0.34202, 0.939693, 0, 1, 3)
+
+[node name="UI" parent="." instance=ExtResource("2_hysu5")]
